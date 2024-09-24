@@ -69,7 +69,7 @@ body {
     color: #f0cf9a;
 }
 h2 {
-    font-family: 'Merriweather', serif;
+  font-family: 'Courier New', monospace;
     font-size: 3em;
     color: #f0cf9a;
 }
@@ -78,3 +78,8 @@ h3 {
     font-size: 2em;
     color: #f0cf9a;
 }
+img {
+  width: 450px;
+  height: 300px;
+}
+
