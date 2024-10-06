@@ -79,53 +79,22 @@ h3 {
     color: #f0cf9a;
 }
 img {
-  width: 450px;
-  height: 300px;
+  width: 100%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 450px; /* Limit maximum width */
 }
 
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
-.main-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
-
-.left-column {
-  width: 100%;
-  max-width: 200px;
-  margin-right: 20px;
-}
-
-.content {
-  flex: 1;
-  max-width: 800px;
-  text-align: left;
-}
-
-@media (max-width: 420px) {
-  .main-content {
-    flex-direction: column;
-  }
+@media (max-width: 768px) {
   .left-column {
-    width: 100%;
-    margin-right: 0;
+      width: 100%; /* Full width on smaller screens */
+      border-right: none; /* Remove border on smaller screens */
   }
-}
 
-@media (min-width: 421px) and (max-width: 1024px) {
   .main-content {
-    flex-direction: row;
+      flex-direction: column; /* Stack columns on smaller screens */
   }
-}
 
-@media (min-width: 1025px) {
-  .main-content {
-    flex-direction: row;
+  .main-content .content {
+      padding: 20px; /* Adjust padding for smaller screens */
   }
 }
