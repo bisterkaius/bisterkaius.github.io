@@ -1,8 +1,10 @@
+
 body {
+
     font-family: 'Courier New', monospace;
     color: white;
     text-align: center;
-    background: radial-gradient(circle, darkblue, rgb(6, 0, 0));
+    background: radial-gradient(circle, darkblue, rgb(6, 0, 0)); /*taustaväri*/
   }
   
   .header {
@@ -21,8 +23,8 @@ body {
     flex-direction: row;
   }
   
-  .left-column {
-    width: 180px; /* adjust to your liking */
+  .left-column { /*vasen sivupalkki muotoilu*/
+    width: 180px; 
     background-color: #f7f7f7;
     padding: 10px;
     border-right: 1px solid #ddd;
@@ -37,7 +39,7 @@ body {
   }
   
   .left-column ul {
-    list-style: none;
+    list-style: none; /*poistaa lista merkit vasemmasn reunan linkeiltä*/
     margin: 0;
     padding: 0;
   }
@@ -46,7 +48,7 @@ body {
     margin-bottom: 10px;
   }
   
-  .left-column a {
+  .left-column a { /*vasemman kolumnin teksti asetukset*/
     text-decoration: none;
     color: #f99b9b;
   }
@@ -63,38 +65,38 @@ body {
   .content h2 {
     margin-top:0 
   }
-  h1 {
-    font-family: 'Courier New', monospace;
+  h1 { /*fontin 1 asetukset*/
+    font-family: 'Courier New', monospace; 
     font-size: 4em;
-    color: #f0cf9a;
+    color: #f0cf9a; 
 }
-h2 {
+h2 { /*fontin 2 asetukset*/
   font-family: 'Courier New', monospace;
     font-size: 3em;
     color: #f0cf9a;
 }
-h3 {
+h3 { /*fontin 3 asetukset*/
     font-family: 'Courier New', monospace;
     font-size: 2em;
     color: #f0cf9a;
 }
 img {
-  width: 100%; /* Make image responsive */
-  height: auto; /* Maintain aspect ratio */
-  max-width: 450px; /* Limit maximum width */
+  width: 100%; /* tee kuvista responsiivisia */
+  height: auto; 
+  max-width: 450px; /* määrittää maksimi leveyden */
 }
 
 @media (max-width: 768px) {
   .left-column {
-      width: 100%; /* Full width on smaller screens */
-      border-right: none; /* Remove border on smaller screens */
+      width: 100%; /* täysleveys isommilla näytöillä */
+      border-right: none; /* poistaa reunan pienemmillä näytöillä */
   }
 
   .main-content {
-      flex-direction: column; /* Stack columns on smaller screens */
+      flex-direction: column; /* laita elementit päällekkäin pienillä näytöillä */
   }
 
   .main-content .content {
-      padding: 20px; /* Adjust padding for smaller screens */
+      padding: 20px; /* muotoile täyte-elementit pienemmillä näytöillä */
   }
 }
