@@ -48,11 +48,11 @@ body {
   
   .left-column a {
     text-decoration: none;
-    color: #ef0e2c;
+    color: #f99b9b;
   }
   
   .left-column a:hover {
-    color: #fa0770;
+    color: #f99b9b;
   }
   
   .main-content .content {
